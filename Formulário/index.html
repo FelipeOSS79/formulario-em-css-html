@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="div_principal">
+
+        <h1>Dados do cliente</h1>
+
+        <div class="div_sec">
+            <div class="credenciais">
+                <input type="email" placeholder="E-mail" /><br />
+                <input type="password" placeholder="Senha" /><br />
+                <input type="password" placeholder="Confirmar senha"><br />
+            </div>
+            <div class="informacoes_pessoais">
+                <input type="text" placeholder="Nome completo" /> <br />
+                <input type="date" placeholder="Data de nascimento"><br />
+
+            </div>
+            <!-- Separei o select para fora da div, pois não estava centralizando todas as caixas-->
+            <select class="estado" name="estado_cidade" placeholder="Estado e cidade">
+                <option value="">Selecione seu estado e cidade</option>
+                <option value="sp_sao_paulo">São Paulo - SP</option>
+                <option value="rj_rio_de_janeiro">Rio de Janeiro - RJ</option>
+                <option value="mg_belo_horizonte">Belo Horizonte - MG</option>
+                <option value="ba_salvador">Salvador - BA</option><br>
+            </select>
+
+            <select class="genero" name="genero" placeholder="genero">
+
+                <option value=""> Selecione seu genero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outros">Outros</option>
+                <option value="Nao_informar">Prefiro não informar</option>
+            </select></br>
+            <textarea class="descricao" name="descrição" rows="4" cols="50" placeholder="Escreva um pouco sobre você"></textarea>
+
+
+
+            <div class="botoes">
+                <button onClick="Enviar()">Enviar</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
